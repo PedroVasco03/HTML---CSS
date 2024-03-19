@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>Multimedia Page</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./pages/audioPage.html">Audio</a></li>
-            <li><a href="./pages/videoPage.html">Video</a></li>
-            <li><a href="./pages/imagePage.html">Image</a></li>
+    <nav class="navbar extended" id="nav">
+        <div class="logo-container">
+            <a href="#" class="logo"><p>L<span style="color: black;">O</span>GO</p></a>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-link"><a class="link" href="./">Home</a></li>
+            <li class="nav-link"><a class="link" href="./pages/audioPage.html">Audio</a></li>
+            <li class="nav-link"><a class="link" href="./pages/videoPage.html">Video</a></li>
+            <li class="nav-link"><a class="link" href="./pages/imagePage.html">Image</a></li>
         </ul>
+        <div class="get-started">
+            <a class="get-started-btn" href="#" onclick="teste()">Get Started</a>
+        </div>
+        <div class="burger" onclick="toggleClass()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
+    <script src="../public/javascript/global.js"></script>
 </body>
 </html>
