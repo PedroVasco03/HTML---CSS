@@ -16,3 +16,12 @@ const toggleClass = () => {
         console.error('nao tem navbar class');
     }
 }
+
+const toggleClassSub = () => {
+    var subNavbar = document.getElementById('sub-menu');
+    if(subNavbar){
+        subNavbar.classList.toggle('sub');
+    }else{
+        console.error('nao tem subNavbar class');
+    }
+}

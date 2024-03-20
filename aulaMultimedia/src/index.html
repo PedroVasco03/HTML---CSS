@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/global.css">
+    <link rel="stylesheet" href="../public/css/navbar.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../public/css/videoSection.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>Multimedia Page</title>
@@ -16,9 +18,15 @@
         </div>
         <ul class="nav-links">
             <li class="nav-link"><a class="link" href="./">Home</a></li>
-            <li class="nav-link"><a class="link" href="./pages/audioPage.html">Audio</a></li>
-            <li class="nav-link"><a class="link" href="./pages/videoPage.html">Video</a></li>
-            <li class="nav-link"><a class="link" href="./pages/imagePage.html">Image</a></li>
+            <li class="nav-link">
+                <a class="link" href="#" onclick="toggleClassSub()">Menu <i style="color: rgb(83, 143, 255);" class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="sub-nav-links" id="sub-menu">
+                    <li class="sub-nav-link"><a class="sub-link" href="#">Audio Section</a></li>
+                    <li class="sub-nav-link"><a class="sub-link" href="#">Video Section</a></li>
+                    <li class="sub-nav-link"><a class="sub-link" href="#">Image Section</a></li>
+                </ul>
+            </li>
+            <li class="nav-link"><a class="link" href="./pages/aboutPage.html">About</a></li>
         </ul>
         <div class="get-started">
             <a class="get-started-btn" href="#" onclick="teste()">Get Started</a>
@@ -29,6 +37,61 @@
             <div></div>
         </div>
     </nav>
+
+    <!-- Video SectioN -->
+    
+    <div class="video-section" id="video-section">
+        <details>
+            <summary>Videos na página HTML</summary>
+            <div class="description">
+                <h2>Video Description</h2>
+                <p>This is a video description>
+    
+            </div>
+            <div class="video">
+                <video  controls  loop>
+                    <source src="./assets/video/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+        </div>
+        </details>
+
+    <!-- Audio SectioN -->
+
+
+    <div class="audio-section" id="audio-section">
+        <details >
+            <summary>Audios na Página HTML</summary>
+            <div class="description">
+                <h2>Audio Description</h2>
+                <p>This is a audio description</p>
+            </div>
+            <div class="audio">
+                <audio  controls  loop>
+                    <source src="./assets/audio/audio.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </details>
+        
+        
+    </div>
+
+    <div class="image-section" id="image-section">
+        <details >
+            <summary>Imagens na Página HTML</summary>
+            <div class="description">
+                <h2>image Description</h2>
+                <p>This is a image description</p>
+            </div>
+            <div class="image">
+                <img width="300px" src="./assets/image/img.JPG" alt="Pedro e Costeleta">
+            </div>
+        </details>
+        
+        
+    </div>
     <script src="../public/javascript/global.js"></script>
+    <script src="./assets/fontawesome-free-6.5.1-web/js/all.min.js"></script>
 </body>
 </html>
